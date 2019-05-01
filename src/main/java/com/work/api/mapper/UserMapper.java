@@ -33,4 +33,7 @@ public interface UserMapper {
 
     @Select("select * from post_tbl")
     Vector<Post> getPost();
+
+    @Insert("insert into user_tbl values(#{username},#{pass},#{name},#{sex},#{phone})")
+    int register(@Param("username") String username,@Param("pass") String pass,@Param("name") String name,@Param("sex") String sex,@Param("phone") String phone);
 }

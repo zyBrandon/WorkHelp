@@ -38,6 +38,15 @@ public class UserController {
         return article;
     }
 
+    //注册用户
+    @RequestMapping(value = "/register",method = RequestMethod.GET)
+    public int register(@RequestParam String username,@RequestParam String pass,
+                        @RequestParam String name,@RequestParam String sex,
+                        @RequestParam String phone){
+        int i = userMapper.register(username,pass,name,sex,phone);
+        return i;
+    }
+
     //获取用户资料
     @RequestMapping(value = "/getUser",method = RequestMethod.GET)
     public User getUser(@RequestParam String username){

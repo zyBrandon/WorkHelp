@@ -1,0 +1,10 @@
+com\work\api\mapper\UserMapper.class
+com\work\api\DemoApplication.class
+com\work\api\model\Exam.class
+com\work\api\model\Post.class
+com\work\api\model\User.class
+com\work\api\model\News.class
+com\work\api\controller\UserController.class
+com\work\api\model\Article.class
+com\work\api\CorsConfig.class
+com\work\api\model\Coin.class
